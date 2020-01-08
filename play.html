@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+  	   <meta charset="utf-8">
+  	   <meta name="description" content="Web game">
+  	   <meta name="keywords" content="game,ball">
+        <meta name="viewport" content= "width=device-width, user-scalable=no">
+  		<title>Playing</title>
+    	<link rel="stylesheet" type="text/css" href="asserts/css/play.css">
+      <link rel="stylesheet" type="text/css" href="asserts/css/main.css">
+    	<link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+
+
+            <!-- <div id="tree_hater" style="position:inherit;margin-top: -350px;margin-bottom: 50px; display: none" class="convas">
+              <img src="asserts/img/character_stand.png" id="character" class="circle" style=""> </div>-->
+<body onload="play()">
+      <div class="board" style="position: sticky!important;top: 0!important;">
+          <span class="score">Timer: <span id="timer"></span></span>
+          <span class="score"> <b>Tree Planted: </b> <span id="score">0</span></span>
+          <span class="score fa fa-volume-up" style="cursor: pointer;" id="sound"></span>
+        </div>
+  	<div class="body">
+      <div id="TREES">
+        
+      </div>
+      <div id="theCharacter">
+        
+      </div>
+
+      <div class="popup-overlay">
+        <div class="popup-content">
+          <h2>We're sorry</h2>
+          <p>Please the window size should be 80% or 90%.</p>
+        </div>
+       </div>
+
+      <div id="hideScreen">
+      	<div class="area">
+        		<div id="convas" class="convas">
+              <img src="asserts/img/bag.png" id="ball" class="circle">
+            </div>
+
+  		</div>
+      	<div class="container" id="form" style="display: none;">
+            <h1 class="text-center"><div>
+              <i><span class="youLose" style="color: red"></span></i>
+            </div></h1>
+        		<h2>Tree Planted: <i><span id="scores"></span></i></h2>
+        		<div class="form-group zeroSecore">
+          		<input type="text" class="form-control" id="name" placeholder="Enter your name">
+        		</div>
+            <div class="form-group" id="doyouknow">
+                <h3 id="fTitle"><b>Did you know?</b></h3>
+                <p id="fP">Some text goes here...</p>
+            </div>
+            <div class="btn-group">
+              <a href="Javascript:void(0)" class="btn btn-success zeroSecore" id="submit">Submit</a>
+              <a href="#!" onClick="window.location.reload();" class="btn btn-success" id="playAgain">Play Again</a>
+              <a href="index.html" class="btn btn-warning">Home</a>
+              <a href="leaderboard.html" class="btn btn-success">Leaderboard</a>
+              <a href="credits.html" class="btn btn-success">Credits</a>
+            </div>
+      	</div>     
+        <div id="trees">
+
+        </div>
+            <div id="industry">
+          
+        </div><br> 
+      </div>
+  	</div>
+  </body>
+  	<script src="vendor/firebase/firebase-app.js"></script>
+  	<script src="vendor/firebase/firebase-firestore.js"></script>
+  	<script src="vendor/firebase/firebase-database.js"></script>
+  	<script src="vendor/jquery/jquery.min.js"></script>
+  	<script src="vendor/bootstrap/bootstrap.min.js"></script>
+  	<script src="asserts/js/init.js"></script>
+    <script src="asserts/js/beeps.js"></script>
+    <script src="asserts/js/raw.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.js"></script>
+  	<script src="asserts/js/play.js"></script>
+</html>

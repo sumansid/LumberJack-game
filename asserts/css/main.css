@@ -1,0 +1,62 @@
+html, body {
+  /* Fix background image problem on large screen */
+  min-height: 100%;
+}
+body {
+  background-image: url("../img/background.jpg")!important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right bottom, left top;
+    background-attachment: fixed;
+}
+.nav-link {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 75px;
+  color: #FBF8F8;
+}
+.nav-link:hover {
+  color: #FBF8F8;
+}
+
+.popup-overlay {
+  /*Hides pop-up when there is no "active" class*/
+  visibility: hidden;
+  position: absolute;
+  background: transparent;
+  border: 3px solid #666666;
+  width: 50%;
+  left: 25%;
+  top: 25%;
+}
+
+.popup-overlay.active {
+  /*displays pop-up when "active" class is present*/
+  visibility: visible;
+  text-align: center;
+}
+
+.popup-content {
+  /*Hides pop-up content when there is no "active" class */
+  visibility: hidden;
+}
+
+.popup-content.active {
+  /*Shows pop-up content when "active" class is present */
+  visibility: visible;
+}
+
+.flex {
+  margin-top: 50px!important;
+  display: flex;
+}
+
+.flex .part1 {
+  flex-direction: column;
+  margin-left: 85px;
+  width: 30%;
+}
+.flex .part2 {
+  flex-direction: column;
+  width: 50%;
+}

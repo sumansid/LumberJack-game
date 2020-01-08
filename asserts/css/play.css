@@ -1,0 +1,138 @@
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+   display: none;
+}
+
+::-webkit-scrollbar:vertical {
+   display: none;
+}
+
+::-webkit-scrollbar:horizontal {
+   display: none;
+}
+body {
+  overflow-x: hidden!important;
+  overflow-y: hidden!important;
+}
+div.area {
+  display:block;
+  border-style:solid;
+  width:100%;
+  height:100%;
+  border: 0;
+}
+div.convas { 
+  width: 100%;
+  height:100%;
+  position:absolute;
+
+}
+.home {
+  text-decoration: none;
+  color: black;
+  background: lightgreen;
+  padding: 15px;
+}
+.home:hover {
+  text-decoration: none;
+  color: black;
+}
+.score {
+  border-radius: 39px;
+  background: #C4C4C4;
+  color: black;
+  padding: 25px;
+  margin-left: 12px;
+}
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  margin-top: 25px!important;
+  justify-content: center;
+  padding: 12px;
+  /* Disable selectable or dragable on image */
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  /* End */
+}
+.s {
+  padding: 12px;
+}
+.circle:before {
+  /*content: '\25CF';*/
+}
+.circle {
+
+  /* Disable selectable or dragable on image */
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  /* End */
+  width: 150px;
+}
+.tree {
+  width: 100px;
+  /* Disable selectable or dragable on image */
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  /* End */
+}
+#trees {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 211px;
+}
+#form {
+  margin-top: 50px;
+  background-color: #C2BFBF!important;
+  border-radius: 34px;
+  padding: 50px;
+}
+#form h2 {
+  text-align: center;
+}
+#name {
+  background: #DCDCDC;
+  border-radius: 68px;
+  padding: 12px;
+}
+#doyouknow {
+  background: #27ae60;
+  border-radius: 11px;
+  text-align: center;
+  padding: 25px;
+}
+#submit, #playAgain, #submit:focus, #playAgain:focus, #submit:active, #playAgain:active {
+}
+#doyouknow p {
+  color: #fff;
+}
+
+#character {
+  animation-play-state:paused;
+}
+/* Responsive */
+@media only screen and (max-width: 915px) {
+  .circle {
+    font-size: 100px!important;
+  }
+}
+@media only screen and (max-width: 715px) {
+  .circle {
+    font-size: 75px!important;
+  }
+}

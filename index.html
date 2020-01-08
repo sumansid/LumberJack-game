@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Web game">
+		<meta name="keywords" content="game,ball">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Index</title>
+	  	<link rel="stylesheet" type="text/css" href="asserts/css/index.css">
+	  	<link rel="stylesheet" type="text/css" href="asserts/css/main.css">
+		<link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+	</head>
+	<body>
+		<div class="popup-overlay">
+		  <div class="popup-content">
+		    <h2>We're sorry</h2>
+		    <p>Please the window size should be 80% or 90%.</p>
+		  </div>
+		 </div>
+
+		<div id="hideScreen">
+		  <nav class="navbar navbar-expand-sm  justify-content-center">
+		    <ul class="navbar-nav">
+	      		<li class="nav-item">
+		        	<a class="nav-link" href="index.html">Home</a>
+		      	</li>
+		      	<li class="nav-item">
+		        	<a class="nav-link" href="leaderboard.html">Leaderboard</a>
+		      	</li>
+		      	<li class="nav-item">
+		        	<a class="nav-link" href="play.html">Play Now</a>
+		      	</li>
+		      	<li class="nav-item">
+		        	<a class="nav-link" href="credits.html">Credits</a>
+		      	</li>
+		    </ul>
+		  </nav>
+		  <center><h2>Game Description:</h2></center>
+			<div class="flex">
+					<div class="part1">
+						<strong style="font-size: 25px;">Sack of Seeds: </strong><img src="asserts/img/bag.png" style="width: 150px">
+						<br>
+						<div style=";`">
+							<strong style="font-size: 25px;">Lumber Jack: </strong>
+							
+						<img src="asserts/img/guy.png" style="width: 200px"> 
+						</div>
+					</div>
+					<div class="part2">
+						<h3>How it works?</h3>
+						<p>The sack of seeds needs to be clicked in order to plant trees in the background. As the trees are planted, the lumberjack cuts them one by one. If the lumberjack cuts all the trees, you’ll lose. In order to defeat the lumberjack, you’ll need to keep on planting more trees. And to win the game overall, you’ll need to be top on the leaderboard.</p>
+					</div>
+			</div>
+		</div>
+	</body>
+  	<script src="vendor/firebase/firebase-app.js"></script>
+  	<script src="vendor/firebase/firebase-firestore.js"></script>
+  	<script src="vendor/firebase/firebase-database.js"></script>
+  	<script src="vendor/jquery/jquery.min.js"></script>
+  	<script src="vendor/bootstrap/bootstrap.min.js"></script>
+  	<script src="asserts/js/init.js"></script>
+</html>
