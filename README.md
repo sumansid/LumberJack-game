@@ -1,6 +1,7 @@
 # LumberJack-game
 
-# Inspired by https://teamtrees.org/
+# Inspired by : 
+https://teamtrees.org/
 
 Language : HTML, JavaScript, CSS
 
