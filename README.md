@@ -29,3 +29,6 @@ Tree: https://www.cleanpng.com/png-computer-icons-acacia-gum-arabic-tree-clip-ar
 Sack of Seeds: https://www.clipartwiki.com/iclip/ihbiTih_vector-illustration-of-sack-of-milled-wheat-grain/
 
 Background: https://superawesomevectors.com/vector-desert-landscape-background/
+
+# Contributing
+Pull requests are welcome.
