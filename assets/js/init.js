@@ -1,9 +1,8 @@
 Timer = 45000;
-LOSETEXT = "You lost! Plant more trees next time !";
+LOSETEXT = "You lost! Try hard next time !";
 
 //Allow you to add sounds on tree cut!
 //if true then works, but if user turn on from
-//sound icon.
 const SOUNDONCUTS = false;
 
 function jqUpdateSize(){
@@ -20,8 +19,7 @@ function jqUpdateSize(){
 $(document).ready(jqUpdateSize);    // When the page first loads
 $(window).resize(jqUpdateSize);     // When the browser changes size
 
-
-
+// Firebase API details for the leaderboard
 var firebaseConfig = {
     apiKey: "AIzaSyBEPTwaqVCzMR6dw6JCGTL7rAXI45jVpvs",
     authDomain: "game-c5fb0.firebaseapp.com",
