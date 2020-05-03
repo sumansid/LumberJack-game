@@ -139,9 +139,6 @@ $("#ball").click(function(){
   speed -= 2;
   
 
-  /*if (TreePlanted == 3) {
-    industryPlace();
-  }*/
 });
 
 /*
