@@ -7,11 +7,8 @@ LOSETEXT = "You lost! Plant more trees next time !";
 const SOUNDONCUTS = false;
 
 function jqUpdateSize(){
-    // Get the dimensions of the viewport
     var width = $(window).width();
     var height = $(window).height();
-    //Allowed width 1600
-    //Allowed height 358
     if (width < 1300 || width > 1600) {
     	$(".popup-overlay, .popup-content").addClass("active");
     	$("#hideScreen").hide();
@@ -24,8 +21,7 @@ $(document).ready(jqUpdateSize);    // When the page first loads
 $(window).resize(jqUpdateSize);     // When the browser changes size
 
 
-//Firebase
-  // Your web app's Firebase configuration
+
 var firebaseConfig = {
     apiKey: "AIzaSyBEPTwaqVCzMR6dw6JCGTL7rAXI45jVpvs",
     authDomain: "game-c5fb0.firebaseapp.com",
@@ -38,4 +34,3 @@ var firebaseConfig = {
   };
 // Initialize Firebase
 firebase = firebase.initializeApp(firebaseConfig);
-
