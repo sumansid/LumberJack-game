@@ -1,6 +1,5 @@
 var ref = firebase.database().ref('scores');
 
-//Retrieving data
 ref.on("value", function(snapshot) {
 	obj = snapshot.val();
 	if (obj != null) {
