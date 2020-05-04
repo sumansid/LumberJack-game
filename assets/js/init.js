@@ -1,7 +1,7 @@
 Timer = 45000;
 LOSETEXT = "You lost! Try hard next time !";
 
-//Allow you to add sounds on tree cut!
+//add sounds on tree cut!
 //if true then works, but if user turn on from
 const SOUNDONCUTS = false;
 
