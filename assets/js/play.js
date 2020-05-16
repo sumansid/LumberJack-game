@@ -39,11 +39,10 @@ $("#sound").click(f => {
 //Default width of screen.
 var width = $("#convas").width();
 var height = $("#convas").height();
-
 var bodyWidth = $(".body").width();
 var bodyHeight = $("body").height();
 
-console.log(bodyHeight);
+//console.log(bodyHeight);
 
 //Get the ball size.
 ballSize = parseInt($("#ball").css('width'), 10);
@@ -91,7 +90,7 @@ $("#ball").click(function(){
     ONETREE = 0;
   }
 
-  //Broke the tree
+  //Break the tree
   r = getrand(1, 3);
   //Plant three trees.
   for (i = 1; i <= 3; i++) {
@@ -105,12 +104,12 @@ $("#ball").click(function(){
     } else {
       leftMargin = '';
     }
-
     //margin-top: 190px;
     $('#TREES').prepend('<img class="tree" src="assets/img/tree.jpg"'+id+' style="margin-top:'+TreeTopPosition+'px;margin-left:'+TreeLeftPosition+';margin-bottom: 50px;">');
   }
 
-  //Get 15% from ball size.
+  
+  //Get 15% from sack size upon each click
   fivePercent = (15 / ballSize) * 100;
   //Set the values.
   max_x += fivePercent;
@@ -213,30 +212,6 @@ function play()
   start();
 }
 
-
-function tree_hater()
-{
-
-}
-
-/**
-  * Industry
-*/
-function industryPlace()
-{
-
-  //Make insudtry decent looks..
-  /*if (FirstIndustry = 0) {
-    industryMargin = 'margin-top:30px';
-    FirstIndustry = 1;
-  } else {
-    industryMargin = 'margin-top: 40px';
-    FirstIndustry = 0;
-  }
-
-  $("#trees").append('<img class="tree" src="assets/img/factory.png" style="'+industryMargin+'">');
-  industry = window.setTimeout('industryPlace()', 8000);*/
-}
 
 //Update the timer on screen.
 function timer()
