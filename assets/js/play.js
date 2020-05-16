@@ -14,7 +14,6 @@ function getrand(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-
 //Change color, according to values.
 if (localStorage.getItem('sound') == 1) {
   $("#sound").css('color', 'green');
@@ -116,12 +115,6 @@ $("#ball").click(function(){
   max_y += fivePercent;
   ballSize -= fivePercent;
 
-  //Move the character
-
-  /*if (TreePlanted >= TreeBroken) {
-    character_move_func();
-    $("#character").show();
-  }*/
   //scores. 
   s = parseInt(localStorage.getItem('score')); 
   s += 3;
