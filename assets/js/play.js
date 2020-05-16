@@ -177,12 +177,6 @@ async function character_move_func()
     TreeBroken +=1;
     $("#score").text(s);
 
-    //Let stop and disapear when there is no trees found
-    /*if (TreePlanted == TreeBroken) {
-      clearInterval(character_move);
-      $("#character").hide();
-    }*/
-
   FIRST_MOVE = 1;
 
   $("#theCharacter").empty();
@@ -212,14 +206,12 @@ function play()
   start();
 }
 
-
 //Update the timer on screen.
 function timer()
 {
   var t = $("#timer").text();
   $("#timer").text(--t);
 }
-
 
 //Start the game.
 function start() {
@@ -283,13 +275,11 @@ $("#submit").click(function(e) {
  }
 });
 
-
 //Get the array size/length
 FactSize = Facts.length;
 
 //get random fact number
 fact = getrand(0, FactSize - 1);
-
 //get the random fact
 randomFact = Facts[fact];
 
